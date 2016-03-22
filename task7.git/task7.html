@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;font-family:微软雅黑;list-style: none;;text-decoration: none;}
+        #wrap{min-width: 1280px;height: 20px;}
+        #header{height:58px;position: relative}
+        #header img{padding-left:58px;padding-top: 11px; }
+        #header span{font-size: 20px;display: inline-block;position: absolute  ;
+        top:15px;left: 100px;}
+        #header ul{height: 17px;position: absolute;list-style-type:none;position: absolute;top: 16px;left: 620px;}
+        #header li{float: left;}
+        #header li a{font-size: 16px;color: #83868d;display: block;width:104px ;height:39px ;text-align: center;}
+        #header  li a:hover{color:#e74f4d; border-bottom: 5px solid #e74f4d;}
+        .denglu{text-decoration: none;position: absolute;top:17px;right:80px;color: #ea6f6e;font-size: 16px;}
+        .renxing{position: absolute;top:6px;right:115px;}
+
+        .f1{position: relative}
+        .f1-div{position: absolute;top:215px;left: 116px;}
+        .tonl{font-size: 60px;
+            color: #ffffff;}
+        .f1-div span{font-size: 21px;color:#ffffff;line-height:32px;display: block;text-indent: 9px; }
+       .f1-div a{width: 330px;height:64px;background: #e7504d;margin-top:65px;display: block;
+           font-size: 30px;color: #ffffff;line-height:60px;text-indent: 95px }
+
+
+        .f2{height:595px; }
+        .f2 img{padding: 40px 137px;}
+        .f2 li{float: left;text-align: center;font-size: 14px;color: #8d8d8d;padding: 0 82px;border-right: 1px solid #8d8d8d;}
+        .dahongshu{margin-top:115px;margin-left: 456px; }
+        .guanyu{font-size: 48px;color:#a0a1a1;text-indent: 212px;line-height:55px;text-indent: 260px;}
+        
+        .f3{position: relative;background-image: url("ditu_31.png");height: 340px;}
+        .f3 p{font-size: 23px;color: #ffffff;text-align: center;padding-top: 51px;}
+        .f3 p~p{font-size: 13px;padding-top: 27px;}
+        form {
+            margin: 50px auto 0;
+            text-align: center;  }
+        form select {
+            width: 239px;
+            height: 38px;
+            border: solid 1px #d79895;
+            appearance: none;
+
+            -webkit-appearance: none;
+            background: #fff url(biaojiantou_32.png) no-repeat scroll right 10px center;
+            padding-right: 20px;
+            padding-left: 15px;
+            color: #aba6a5;}
+        .sub-btn {
+            height: 38px;
+            width: 235px;
+            margin-right: 25px;
+            border: 0;
+            border-radius: 0;
+             background-color: #bf4f49;
+             color: #fff;
+             font-size: 1rem;
+             letter-spacing: 25px;
+             text-align: center;
+             padding-left: 25px;
+             cursor: pointer;}
+        .hr{width: 30px;
+            height: 2px;
+            margin-top: 18px;
+        margin-left: 625px;;
+            background: #FFF;}
+
+
+        .f4 {  height: 605px; background: #f7f7f7;  }
+        .f4 ul {  width: 1280px;  padding-top: 100px;}
+        .f4 li {  float: left;  width: 25%;}
+        .f4 a {  color: #615C5C;}
+        .f4 img{  padding: 10px;  border: solid 1px #cecfce;  }
+        .f4 h1 {  font-size: 24px;  font-weight: 200;  letter-spacing: 32px;  padding-left: 27px;  }
+        .f4 h2 {  margin: 10px;  }
+        .f4 h3 {  font-size: 12px;  color: #bcbdbd;  margin: 10px;  }
+        .f4 img {  padding: 10px;  border: solid 1px #cecfce;  }
+
+        #introduce-info div.infos {
+            float: left;
+            text-align: center;
+        }
+        div.info1 {
+            width: 66.6666%;
+            height: 565px;
+            background: url(task_1_7_1_50.png) no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        div.info2 {
+            width: 33.3333%;
+            height: 565px;
+            padding: 0 70px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        div.info2 p {
+            line-height: 35px;
+            font-size: 12px;
+            color: #767777;
+        }
+        div.info2 a {
+            display: inline-block;
+            height: 33px;
+            width: 105px;
+            color: #e74f4d;
+            font-size: 12px;
+            line-height: 33px;
+            text-decoration: none;
+            border: 1px solid #e74f4d;
+        }
+        a {
+            background-color: transparent;
+        }
+        div.info2 span.selected {
+            background: #929292;
+        }
+        div.info2 span.info2-span {
+            height: 12px;
+            width: 12px;
+            border-radius: 100%;
+            display: inline-block;
+            border: 1px solid #929292;
+            margin: 25px 7px;
+        }
+        div.info2 span.info2-span {
+            height: 12px;
+            width: 12px;
+            border-radius: 100%;
+            display: inline-block;
+            border: 1px solid #929292;
+            margin: 25px 7px;
+        }
+
+        div.info3 {
+            background: #e74f4d;
+            height: 520px;
+            width: 33.3333%;
+        }
+        div.info3 p {
+            font-size: 20px;
+            color: #fff;
+            font-weight: normal;
+            line-height: 30px;
+            margin: 150px 0 50px 0;
+        }
+
+        div.info3 a {
+            display: inline-block;
+            height: 40px;
+            width: 167px;
+            font-size: 20px;
+            line-height: 40px;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+
+        div.info4 {
+            background: #fff; height: 520px;
+            width: 33.3333%;
+        }
+        div.info4 p {
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 30px;
+            margin: 150px 0 50px 0;
+        }
+        div.info4 a {
+            border: 1px solid #e74f4d;
+            color: #e74f4d;display: inline-block;
+            height: 40px;
+            width: 167px;
+            font-size: 20px;
+            line-height: 40px;
+            text-decoration: none;
+
+        }
+        div.info5 {
+            background: url(task_1_7_1_64.png) no-repeat;
+            background-size: cover;
+            position: relative;height: 520px;  width: 33.3333%;
+        }
+
+        #join-us {
+            text-align: center;
+            padding: 0 100px;
+            overflow: hidden;
+            min-width: 1280px;
+        }
+        #join-us h2 {
+            margin: 100px 0 20px 0;
+            font-size: 22px;
+            font-weight: normal;
+            color: #323333;
+        }
+        #join-us h2:after {
+            content: '';
+            display: inline-block;
+            height: 2px;
+            width: 30px;
+            background: #e74f4d;
+        }
+        #join-us p {
+            font-size: 12px;
+            color: #aaaaaa;
+            margin: 0 0 50px 0;
+        }
+        #join-us .form-wrap {
+            width: 100%;
+            min-width: 1080px;
+            overflow: hidden;
+            padding-bottom: 160px;
+        }
+        .form-wrap .rule-list {
+            width: 33.3333%;
+            min-width: 360px;
+            float: left;
+            text-align: left;
+            padding-right: 50px;
+            padding-left: 35px;
+        }
+        .rule-list dl {
+            margin: 0 0 30px 0;
+            padding-bottom: 20px;
+            position: relative;
+        }
+       .rule-list dl dt {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .rule-list dl dd {
+            margin: 0;
+            font-size: 12px;
+            color: #aaaaaa;
+        }
+        .rule-list dl span {
+            display: block;
+            position: absolute;
+            height: 9px;
+            width: 45px;
+            background: url(task_1_7_1_78.png) no-repeat;
+            right: 0;
+            bottom: 0;
+        }
+        form {
+            margin: 50px auto 0;
+            text-align: center;
+        }
+        div.username, div.usermethed {
+            float: left;}
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+        <img src="hongshu_03.png">
+        <span>新世界</span>
+        <ul>
+            <li><a class="on" href="#">首页</a> </li>
+            <li><a href="#">最新活动</a> </li>
+            <li><a href="#">项目介绍</a> </li>
+            <li><a href="#">爱心社区</a> </li>
+            <li><a href="#">关于我们</a> </li>
+        </ul>
+        <img class="renxing"  src="xiaoren_06.png">
+        <a class="denglu"  href="#">登陆</a>
+    </div>
+    <div class="f1">
+        <img src="datu_11.png">
+        <div class="f1-div">
+            <p class="tonl">Time of new life</p>
+            <span>新时代，年轻的人们让我们一起</span>
+            <span>体验新生活，享受新生活</span>
+            <a href="#">
+                开始体验
+            </a>
+        </div>
+
+
+    </div>
+    <div class="f2">
+    <img src="xiaoyuan_19.png">
+    <img src="xiaoyuan_21.png">
+    <img src="xiaoyuan_14.png">
+    <img src="xiaoyuan_16.png">
+        <ul>
+            <li><p>打造全新世界观，让你更</p>
+            <p>爱你的生活</p></li>
+
+            <li><p>丰富多彩的公益活动，发</p>
+                <p>挥新世界的主人公意识</p></li>
+
+            <li><p>时尚的新理念，超前体验</p>
+                <p>未知的生活</p></li>
+
+            <li><p>完善的培养机制，培养你</p>
+                <p>全新的世界观</p></li>
+        </ul>
+        <img class="dahongshu" src="dahongshu_28.png">
+        <p class="guanyu">关于新世界，你不知道的还有什么?</p>
+    </div>
+    <div class="f3">
+        <p>查找新世界城市活动信息</p>
+        <div class="hr"></div>
+        <p>每个城市都有不同的活动信息，请自主查询您所需要了解的城市</p>
+
+        <form>
+            <select name="国家">
+                <option value="国家">国家</option>
+                <option value="中国">中国</option>
+                <option value="美国">美国</option>
+                <option value="德国">德国</option>
+                <option value="英国">英国</option>
+                <option value="日本">日本</option>
+            </select>
+            <select name="省份">
+                <option value="省份">省份</option>
+                <option value="浙江">浙江</option>
+                <option value="北京">北京</option>
+                <option value="上海">上海</option>
+                <option value="广东">广东</option>
+            </select>
+            <select name="城市">
+                <option value="城市">城市</option>
+                <option value="杭州">杭州</option>
+                <option value="临安">临安</option>
+                <option value="宁波">宁波</option>
+                <option value="温州">温州</option>
+            </select>
+            <input class="sub-btn" type="submit" value="搜索">
+
+        </form>
+
+    </div>
+    <div class="f4">
+            <ul>
+                <li>
+                    <a href=""><img src="task_1_7_1_38.png" alt="">
+                        <h2>北京活动</h2>
+                        <h3>新社区大联盟</h3></a>
+                </li>
+                <li>
+                    <a href=""><h1>上海活动</h1><h3>夜上海新景观探索</h3>
+                        <img src="task_1_7_1_44.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="task_1_7_1_41.png" alt="">
+                        <h2>深圳活动</h2>
+                        <h3>全新海岸线观点站</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="task_1_7_1_36.png" alt="">
+                        <h2>香港活动</h2>
+                        <h3>奢华消费大放送</h3></a>
+                </li>
+            </ul>
+        </div>
+    <div id="introduce-info">
+        <div class="infos info1">
+            <span></span>
+        </div>
+        <div class="infos info2">
+            <img src="task_1_7_1_59.png">
+            <p>这里是新世界这里是新世界这里是新世界这里是新世界这里是新世界这里是新世界这里是新世界这里是新世界这里是新世界这里是新世界这里是新世界这里是新世界这里是新世界这里是新世界这里是新世界这里是新世界这里是新世界这里是新世界</p>
+            <a href="javascript:;">更多详情</a>
+            <br>
+            <span class="info2-span selected"></span>
+            <span class="info2-span"></span>
+            <span class="info2-span"></span>
+        </div>
+        <div class="infos info3">
+            <p>新时代<br>关于爱生活的我们<br></p>
+
+            <a href="javascript:;">查看更多</a>
+        </div>
+        <div class="infos info4">
+            <p>新时代<br>关于爱生活的我们<br></p>
+            <a href="javascript:;">查看更多</a>
+        </div>
+        <div class="infos info5">
+            <span></span>
+        </div>
+    </div>
+    <div id="join-us">
+        <h2>成为我们的志愿者<br></h2>
+        <p>新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情 <br>那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
+        <div class="form-wrap">
+            <div class="rule-list">
+                <dl>
+                    <dt>新世界志愿者协议</dt>
+                    <dd>加入新世界志愿者的人员必须遵守中华人民共共和国的 相关法律法规，并且本着平等资源的原则 ......</dd>
+                    <span></span>
+                </dl>
+                <dl>
+                    <dt>新世界志愿者协议</dt>
+                    <dd>加入新世界志愿者的人员必须遵守中华人民共共和国的 相关法律法规，并且本着平等资源的原则 ......</dd>
+                    <span></span>
+                </dl>
+                <dl>
+                    <dt>更多条款</dt>
+                    <span></span>
+                </dl>
+                <form>
+                    <div class="input-wrap username">
+                        <label for="username">姓名：</label><input type="text" id="username">
+                    </div>
+                    <div class="input-wrap userage">
+                        <label for="userage">年龄：</label><input type="text" id="userage">
+                    </div>
+                    <div class="input-wrap usermethed">
+                        <label for="usermethed">联系方式：</label><input type="text" id="usermethed">
+                    </div>
+                    <div class="input-wrap useradress">
+                        <label for="useradress">联系地址：</label><input type="text" id="useradress">
+                    </div>
+                    <div class="input-wrap textarea">
+                        <label for="userlife">请简单描述您梦想的生活：</label><textarea id="userlife"></textarea>
+                    </div>
+                    <a style="clear:both;display:block" class="submit-apply" href="javascript:;">提交申请</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+</body>
+</html>
